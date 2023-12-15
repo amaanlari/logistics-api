@@ -21,4 +21,10 @@ public class LoadServiceImpl implements LoadService{
     public List<Load> getLoads() {
         return loads;
     }
+
+    @Override
+    public Load addLoad(Load load) {
+        loads.add(load);
+        return load;
+    }
 }

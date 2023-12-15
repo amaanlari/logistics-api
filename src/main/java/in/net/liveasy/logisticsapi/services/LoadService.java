@@ -7,4 +7,6 @@ import java.util.List;
 public interface LoadService {
 
     public List<Load> getLoads();
+
+    Load addLoad(Load load);
 }
