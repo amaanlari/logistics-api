@@ -1,8 +1,13 @@
 package in.net.liveasy.logisticsapi.models;
 
+import jakarta.persistence.*;
+
 import java.time.LocalDate;
 
+@Entity
 public class Load {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long loadId;
     private String loadingPoint;
     private String unloadingPoint;
@@ -11,6 +16,7 @@ public class Load {
     private int noOfTrucks;
     private double weight;
     private String comment;
+    @Column
     private String shipperId;
     private LocalDate date;
 
