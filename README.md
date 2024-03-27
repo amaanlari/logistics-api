@@ -20,6 +20,7 @@ This project is a logistics API developed using Spring Boot, designed to streaml
 - **Hibernate**: Object-relational mapping.
 - **PostgreSQL**: Database management system.
 - **Render**: Platform for hosting and deployment.
+- **Neon**: Platform for deploying the database (Postgres).
 
 ## Getting Started
 
@@ -34,7 +35,7 @@ This project is a logistics API developed using Spring Boot, designed to streaml
 - `PUT /load/{id}`: Update an existing load entry.
 - `DELETE /load/{id}`: Delete a load entry by ID.
 - `GET /load/{id}`: Retrieve a load entry by ID.
-- `GET /loads`: Retrieve all load entries.
+- `GET /load/all`: Retrieve all load entries.
 
 ## Contributing
 
